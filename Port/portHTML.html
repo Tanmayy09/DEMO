@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Dhruv_GFX</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="portCSS.css">
+    </head>
+
+    <body>
+        <section id="home" class="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light" style="box-shadow: 0 4px 4px 0 rgba(0,0,0,0.4);">
+            <div class="container">
+              <a class="navbar-brand aa" href="portHTML.html"><span class="dhruv">Dhruv</span> GFX</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nnn ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link bc active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link bc" href="#reviews">Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link bc" href="#contact">Contact me</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link bc dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Store</a>
+                    <ul class="dropdown-menu">
+                      <a class="dropdown-item" href="#">BGMI</a>
+                      <a class="dropdown-item" href="#">Thumbnail</a>
+                      <a class="dropdown-item" href="#">Telegram Store</a>
+                      <a class="dropdown-item" href="#">Stickers</a>
+                      <hr class="dropdown-divider">
+                      <a class="dropdown-item" href="#">Business</a>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </section>
+
+
+        <section id="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col con text-center">
+                        <p class="am">Hello I'm</p>
+                        <h2 class="title">Dhruv Gupta</h2>
+                        <p class="des">I am a passionate Logo designer specializing in creating stunning visuals for various projects.</p>
+                        <button class="btn buu" onclick="scrollDown()">Explorer me</button>
+                    </div>
+                </div>
+            </div>
+            <img src="./image/wave1.png" class="bottom-img">
+        </section>
+
+        <section id="scrollTarget"> <!-- Add an ID to the section you want to scroll to -->
+            <!-- Content of the section -->
+        </section>
+
+        <script>
+            window.onload = function() {
+                const scrollPosition = localStorage.getItem('scrollPosition');
+                if (scrollPosition) {
+                    window.scrollTo(0, scrollPosition);
+                }
+            };
+    
+            function scrollDown() {
+                const scrollAmount = 400;
+                window.scrollBy({
+                    top: scrollAmount,
+                    behavior: 'smooth'
+                });
+                // Store the scroll position in localStorage
+                localStorage.setItem('scrollPosition', window.scrollY);
+            }
+    
+            window.addEventListener('beforeunload', function() {
+                window.scrollTo(0, 0); // Scroll to the top before unloading the page
+            });
+        </script>
+
+
+        <section id="service">
+            <div class="container">
+                <h3 class=" exp text-center">Elevate Your Experience with us</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Youtube UI/UX</h2>
+                        <p>Whether you're a content creator, brand, or business, we offer tailored UI/UX solutions to suit your unique needs. From channel layout optimization to custom thumbnails and video overlays, we ensure that  your YouTube presence is designed to captivate your audience and reinforce your brand identity.</p>
+                    </div>
+                    <div class="co-md-6">
+                        <h2>Promotional Graphics</h2>
+                        <p>Whether it's a poster for an event, a flyer for a promotion, or a brochure for<br>
+                            your business, we ensure that every design element is carefully considered <br> to captivate your audience and leave a lasting impact.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <h2 class=" my text-center">My Samples</h2>
+            <div class="wrapper">
+                <div class="container cc">
+                    <input type="radio" name="slide" id="c1" checked>
+                    <label for="c1" class="card ca">
+                        <div class="row">
+                            <div class="icon">1</div>
+                            <div class="description">
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c2">
+                    <label for="c2" class="card ca">
+                        <div class="row">
+                            <div class="icon">2</div>
+                            <div class="description">
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c3">
+                    <label for="c3" class="card ca">
+                        <div class="row">
+                            <div class="icon">3</div>
+                            <div class="description">
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c4">
+                    <label for="c4" class="ca">
+                        <div class="row">
+                            
+                            <div class="description">
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c5">
+                    <label for="c5" class="card ca">
+                        <div class="row">
+                            <div class="icon">5</div>
+                            <div class="description">
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c6">
+                    <label for="c6" class="card ca">
+                        <div class="row">
+                            <div class="icon">6</div>
+                            <div class="description">
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about-us">
+            <div class="container">
+                <h2 class="choose text-center">Why Choose us?</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="about-title">Why we're different?</p>
+                        <ul>
+                            <li>Dedicated towards creating visually stunning and user-friendly</li>
+                            <li>Passion for innovation</li>
+                            <li>Deliver cutting-edge design solutions that exceed our clients expectations</li>
+                            <li>Understand our client's goal first</li>
+                            <li>We deliver on time</li>
+                            <li>We create a wining content strategy</li>
+                            <li>Doing business with honesty</li>
+                            <li>We protect our & client's reputation</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./image/Why choose us.jpg" alt="choose">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="reviews">
+            <div class="container">
+                <h2 class="my text-center">Client's Reviews</h2>
+                <div class="row">
+                    <div class="col-md-4 reviews" >
+                        <p>Working with Dhruv GFX was a game changer for our brand. Their attention to details
+                            and creativity surpassed our expectations. Highly recommened their services.
+                        </p>
+                        <h4>-Shubham</h4>
+                    </div>
+                    <div class="col-md-4 reviews" >
+                        <p>Working with Dhruv GFX was a game changer for our brand. Their attention to details
+                            and creativity surpassed our expectations. Highly recommened their services.
+                        </p>
+                        <h4>-Manish</h4>
+                    </div>
+                    <div class="col-md-4 reviews" >
+                        <p>Working with Dhruv GFX was a game changer for our brand. Their attention to details
+                            and creativity surpassed our expectations. Highly recommened their services.
+                        </p>
+                        <h4>-ACP Diler</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container admin text-center">
+                <div class="row mt-4">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="card cuu" data-toggle="modal" data-target="#addcontactme">
+                            <div class="card-body text-center">
+                                <div class="container">
+                                    <img class="img-fluid rounded-circle" src="./image/contact.jpg" alt="user_icon" style="max-width: 300px;">
+                                </div>
+                                <h1 class="text-muted pt-3">Contact me</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="footer">
+            <!-- Remove the container if you want to extend the Footer to full width. -->
+            <!-- Footer -->
+            <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
+              <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                <!-- Section: Links -->
+                    <section class="">
+                    <!--Grid row-->
+                        <div class="row">
+                        <!-- Grid column -->
+                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Dhruv_GFX</h6>
+                                <p>Dhruv GFX is your trusted partner in transforming ideas into captivating visuals that leave a lasting impression.</p>
+                            </div>
+                        <!-- Grid column -->
+                            <hr class="w-100 clearfix d-md-none" />
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                            <p><a class="text-white" href="#">BGMI</a></p>
+                            <p><a class="text-white" href="#">Thumbnail</a></p>
+                            <p><a class="text-white" href="#">Telegram Store</a></p>
+                            <p><a class="text-white" href="#">Business</a></p>
+                        </div>
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
+                       <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Address</h6>
+                            <p><i class="fas fa-home mr-3"></i> India , UttarPradesh</p>
+                            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                        </div>
+                        <!-- Grid column -->
+                       <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>  
+                            <!-- Twitter -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#" role="button"><i class="fab fa-twitter"></i></a>
+                            <!-- telegram -->
+                            <a class="btn btn-primary btn-floating m-1" href="https://telegram.me/DhruvGFXlogos" role="button"><i class="fab fa-telegram"></i></a>
+                            <!-- Instagram -->
+                            <a class="btn btn-primary btn-floating m-1" style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);" href="#" role="button"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                <!--Grid row-->
+                </section>
+            <!-- Section: Links -->
+            </div>
+                <!-- Grid container -->
+                <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                Copyright © 2024. All rights reserved.
+            </div>
+      <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+        </div>
+        <!-- End of .container -->
+        </section> 
+        
+        
+        <div class="modal fade" id="addcontactme" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Please Fill this form</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form class="fom">
+                        <div class="row">
+                            <div class="col-md-6 ">
+                                <label for="validationCustom01" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="validationCustom01" value="" required>
+                                <div class="valid-feedback">
+                                Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom02" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="validationCustom02" value="" required>
+                                <div class="valid-feedback">
+                                Looks good!
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="mb-4">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            <div id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                            <input type="number" class="form-control" id="exampleInputPassword1" required>
+                            <div id="numberHelp" class="form-text text-muted">Make sure that entered number is link with Telegram.</div>
+                        </div>
+                        <div class="form-floating">
+                            <label for="floatingTextarea">Comments</label>
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                        </div>
+                        <div class="text-center pt-4"> 
+                            <button type="submit" class="btn button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+       </div>
+    </div>
+    </div>
+       
+    </body>
+</html>
